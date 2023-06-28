@@ -1,0 +1,20 @@
+{
+    "sectionTitle": "Experience",
+    "infos": [
+      {
+        "title": "Experience 1",
+        "subTitle": "Experience 1 2021-2022",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+      },
+      {
+        "title": "Experience 2",
+        "subTitle": "Experience 2 2022-2023",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+      },
+      {
+        "title": "Experience 3",
+        "subTitle": "Experience 3 2021-present",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+      }
+    ]
+  }
