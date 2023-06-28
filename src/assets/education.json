@@ -1,0 +1,20 @@
+{
+    "sectionTitle": "Education",
+    "infos": [
+      {
+        "title": "Education 1",
+        "subTitle": "Education 1 2021-2022",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+      },
+      {
+        "title": "Education 2",
+        "subTitle": "Education 2 2022-2023",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+      },
+      {
+        "title": "Education 3",
+        "subTitle": "Education 3 2023-present",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+      }
+    ]
+  }
