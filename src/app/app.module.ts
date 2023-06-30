@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { InfoComponent } from './components/info/info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SidewayTitleinfoComponent } from './components/sideway-titleinfo/sideway-titleinfo.component';
 import { SidewayTitleComponent } from './components/info/sideway-title/sideway-title.component';
 import { ContentComponent } from './components/info/content/content.component';
 
@@ -15,7 +14,6 @@ import { ContentComponent } from './components/info/content/content.component';
     AppComponent,
     SkillsComponent,
     InfoComponent,
-    SidewayTitleinfoComponent,
     SidewayTitleComponent,
     ContentComponent
   ],
