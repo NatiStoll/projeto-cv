@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sideway-title',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./sideway-title.component.scss']
 })
 export class SidewayTitleComponent {
-
+@Input() public sectionTitle!: string;
 }

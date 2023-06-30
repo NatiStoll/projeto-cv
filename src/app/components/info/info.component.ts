@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { InfosData } from 'src/app/models/infos-data.model';
-import * as educationJson from 'src/assets/education.json';
-import * as experienceJson from 'src/assets/experience.json';
+import { InfosDataList } from 'src/app/models/infos-data-list.model';
+import * as infosJson from 'src/assets/info-list.json';
 
 @Component({
   selector: 'app-info',
@@ -9,11 +8,9 @@ import * as experienceJson from 'src/assets/experience.json';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
-  public infosEducation!: InfosData;
-  public infosExperience!: InfosData;
+  public infosList!: InfosDataList;
 
   constructor() {
-    this.infosEducation = educationJson as InfosData;
-    this.infosExperience = experienceJson as InfosData;
+    this.infosList = infosJson as InfosDataList;
   }
 }
