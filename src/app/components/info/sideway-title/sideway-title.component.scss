@@ -1,3 +1,27 @@
 .title {
-    font-size: 30px;
+  font-size: 30px;
+}
+
+.barra {
+  background: #000;
+  width: 100%;
+}
+
+.teste {
+  transform: rotate(270deg);
+  position: relative;
+}
+span {
+  background-color: green;
+  position: absolute;
+  height: 0.3rem;
+  width: 12rem;
+  right: 5rem;
+  top: 0.8rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 1000;
+  text
 }
