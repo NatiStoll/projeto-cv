@@ -1,10 +1,16 @@
 <div class="container">
+
+
   <div *ngFor="let itemList of infosList.infosDataList">
-    <app-sideway-title [sectionTitle]="itemList.sectionTitle">
-    </app-sideway-title>
     <div class="row">
-      <div *ngFor="let info of itemList.infos">
-        <app-content [title]="info.title" [subTitle]="info.subTitle" [text]="info.text"></app-content>
+      <div class="col-12 col-lg-2">
+        <app-sideway-title [sectionTitle]="itemList.sectionTitle">
+        </app-sideway-title>
+      </div>
+      <div class="col-12 col-lg-10">
+        <div *ngFor="let info of itemList.infos">
+          <app-content [title]="info.title" [subTitle]="info.subTitle" [text]="info.text"></app-content>
+        </div>
       </div>
     </div>
   </div>
