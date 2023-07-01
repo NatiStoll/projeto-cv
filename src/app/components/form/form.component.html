@@ -1,3 +1,5 @@
+
+
 <div>
     <h1 mat-dialog-title>Novo usuário</h1>
     <div class="form-content" mat-dialog-content>
@@ -36,7 +38,7 @@
                             <mat-error>O campo empresa é obrigatório.</mat-error>
                         </mat-form-field>
                     </div>
-                    <div class="col-3">
+                    <div class="mensagem col-3">
                         <mat-form-field appearance="outline">
                             <mat-label>Mensagem</mat-label>
                             <input matInput formControlName="mensagem" />
@@ -52,7 +54,7 @@
         <button mat-flat-button (click)="onCancel()">Cancelar</button>
         <button mat-flat-button (click)="onSubmit()" [disabled]="contactForm.invalid" color="primary" cdkFocusInitial>
             Enviar
-        </button>>
+        </button>
     </div>
 
 </div>
