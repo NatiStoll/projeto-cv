@@ -8,6 +8,7 @@ import { InfoComponent } from './components/info/info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidewayTitleComponent } from './components/info/sideway-title/sideway-title.component';
 import { ContentComponent } from './components/info/content/content.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContentComponent } from './components/info/content/content.component';
     SkillsComponent,
     InfoComponent,
     SidewayTitleComponent,
-    ContentComponent
+    ContentComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
