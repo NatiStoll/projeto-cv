@@ -2,26 +2,22 @@
   font-size: 30px;
 }
 
-.barra {
-  background: #000;
-  width: 100%;
-}
-
 .teste {
   transform: rotate(270deg);
   position: relative;
+  width: 30rem;
 }
 span {
   background-color: green;
-  position: absolute;
+  // position: absolute;
   height: 0.3rem;
   width: 12rem;
-  right: 5rem;
-  top: 0.8rem;
+  margin-right: 16px;
+  margin-top: 20px;
+  z-index: 10;
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 1000;
-  text
 }
