@@ -1,4 +1,6 @@
-[
+
+{ "infosDataList":
+  [
   {
     "sectionTitle": "Education",
     "infos": [
@@ -40,3 +42,4 @@
     ]
   }
 ]
+}
