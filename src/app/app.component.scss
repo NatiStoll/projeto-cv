@@ -2,7 +2,7 @@ aside {
   color: white;
   background-color: #121214;
 
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
 
   h1 {
     font-size: 3rem;
@@ -23,6 +23,8 @@ aside {
     margin-top: 4rem;
     margin-bottom: 3rem;
   }
+
+
 
   .identification,
   .container-skills,
@@ -56,8 +58,22 @@ h4 {
   font-size: 2rem;
 }
 
-.container-about {
-  background-color: aquamarine;
-  padding: 1rem;
-  margin-top: 1.5rem;
+
+
+.container-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding: 20px;
+  background-color: #121214;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
