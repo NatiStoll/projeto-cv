@@ -10,7 +10,7 @@ import * as infosJson from 'src/assets/info-list.json';
 export class InfoComponent {
   public infosList!: InfosDataList;
 
-  constructor(){
+ ngOnInit(): void {
     this.infosList = infosJson as InfosDataList;
   }
 }
