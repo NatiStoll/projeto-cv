@@ -1,0 +1,58 @@
+<div>
+    <h1 mat-dialog-title>Novo usuário</h1>
+    <div class="form-content" mat-dialog-content>
+        <form [formGroup]="contactForm">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="row">
+                    <div class="col-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Nome</mat-label>
+                            <input matInput formControlName="nome" />
+                            <mat-hint>Igual ao documento de identificação.</mat-hint>
+                            <mat-error>O campo nome é obrigatório.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Telefone</mat-label>
+                            <input matInput formControlName="telefone" />
+                            <mat-hint>Numero com o DDD sem espaços ou simbolos.</mat-hint>
+                            <mat-error>O campo telefone é obrigatório.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>E-mail</mat-label>
+                            <input matInput formControlName="email" />
+                            <mat-hint>Exemplo: email@email.com</mat-hint>
+                            <mat-error>O campo email é obrigatório.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Empresa</mat-label>
+                            <input matInput formControlName="empresa" />
+                            <mat-error>O campo empresa é obrigatório.</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Mensagem</mat-label>
+                            <input matInput formControlName="mensagem" />
+                            <mat-error>O campo mensagem tem limite de 140 caracteres.</mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div mat-dialog-actions>
+        <button mat-flat-button (click)="onCancel()">Cancelar</button>
+        <button mat-flat-button (click)="onSubmit()" [disabled]="contactForm.invalid" color="primary" cdkFocusInitial>
+            Enviar
+        </button>>
+    </div>
+
+</div>
