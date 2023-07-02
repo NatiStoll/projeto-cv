@@ -14,43 +14,20 @@
 
             <aside class="col-12 col-lg-4">
 
-              <img class="mb-5" src="../assets/foto.png" alt="Foto de Perfil">
-
-              <div class="identification">
-                <h1>Willians Smiths</h1>
-                <h3>Design Gráfico</h3>
-              </div>
+              <app-profile></app-profile>
 
               <div class="container-skills">
-                <h4>Skills</h4>
                 <app-skills></app-skills>
-                <!-- https://getbootstrap.com/docs/4.0/components/progress/ -->
-
               </div>
               <div>
 
 
                 <div class="container-address">
-                  <h4>Endereço</h4>
-                  <p>Rua Deodoro Fonseca, 1399</p>
-                  <p>Jardim Paraíso</p>
-                  <p>Solaris - RJ</p>
+                  <app-address></app-address>
                 </div>
 
                 <div class="container-contact">
-                  <h4>Contato</h4>
-                  <div class="row">
-                    <div class="col-12 col-lg-6">
-                      <p>meu-email@gmail.com</p>
-                      <p>99 9999-9999</p>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <!-- <img src="../assets/WHATS.png" alt="QR Code de Contato"> -->
-                      <button mat-flat-button color="accent" style="color: white;" (click)="openDialog()">
-                        Contato
-                      </button>
-                    </div>
-                  </div>
+                  <app-contact></app-contact>
                 </div>
               </div>
             </aside>
@@ -69,11 +46,7 @@
               </div>
 
               <footer>
-                <div>
-                  <a href=""><i class="bi bi-instagram"></i> Instagram </a>
-                  <a href=""><i class="bi bi-github"></i> GitHub</a>
-                 
-                </div>
+                <app-footer></app-footer>
               </footer>
             </div>
           </main>
