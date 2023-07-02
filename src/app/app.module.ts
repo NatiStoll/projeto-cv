@@ -22,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AddressComponent } from './components/address/address.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { ContactComponent } from './components/contact/contact.component';
     MatToolbarModule,
     MatIconModule,
     MatDividerModule,
-    [MatDialogModule]
+    [MatDialogModule],
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

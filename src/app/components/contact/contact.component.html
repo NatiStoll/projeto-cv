@@ -2,10 +2,10 @@
 <div class="row">
   <div class="col-8 col-lg-6">
     <p>{{contact.email}}</p>
-    <p>{{contact.phoneNumber}} </p>
-    <button mat-flat-button color="warn" style="color: white;" (click)="openDialog()">
-        Contato
-      </button>
+    <p>{{phoneNumber}} </p>
+    <button class="buttom-style" mat-flat-button color="black" (click)="openDialog()">
+      Mail Me
+    </button>
   </div>
   <div class="col-4 col-lg-6">
     <img src={{contact.qrCode}} alt="Qr Code">

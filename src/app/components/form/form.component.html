@@ -1,5 +1,3 @@
-
-
 <div>
     <h1 mat-dialog-title>Novo usuário</h1>
     <div class="form-content" mat-dialog-content>
@@ -18,7 +16,8 @@
                     <div class="col-12">
                         <mat-form-field appearance="outline">
                             <mat-label>Telefone</mat-label>
-                            <input matInput formControlName="telefone" />
+                            <input matInput formControlName="telefone" (input)="onInputChange($event)"
+                                [mask]="phoneMask" />
                             <mat-hint>Numero com o DDD sem espaços ou simbolos.</mat-hint>
                             <mat-error>O campo telefone é obrigatório.</mat-error>
                         </mat-form-field>
@@ -43,7 +42,7 @@
                     <div class="mensagem col-12">
                         <mat-form-field class="" appearance="outline">
                             <mat-label>Mensagem</mat-label>
-                            <textarea matInput formControlName="mensagem" ></textarea>
+                            <textarea matInput formControlName="mensagem"></textarea>
                             <mat-error>O campo mensagem tem limite de 140 caracteres.</mat-error>
                         </mat-form-field>
                     </div>

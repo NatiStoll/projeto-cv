@@ -1,6 +1,6 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MatDialogRef } from '@angular/material/dialog';
 import { ContactForm } from 'src/app/models/contact-form.model';
 
 @Component({
@@ -11,13 +11,16 @@ import { ContactForm } from 'src/app/models/contact-form.model';
 export class FormComponent implements OnInit {
   public contact?: ContactForm;
   public contactForm!: FormGroup;
+  public phoneMask = '(00) 0 0000-0000';
+
 
   constructor(
-    public dialogRef: MatDialogRef <FormComponent>
+    public dialogRef: MatDialogRef<FormComponent>
   ) { }
 
   ngOnInit(): void {
     this.buildForm();
+    this.getPhoneNUmberMask();
   }
 
   public buildForm() {
@@ -61,6 +64,18 @@ export class FormComponent implements OnInit {
     );
   }
 
+  private getPhoneNUmberMask(): void {
+    this.contactForm.controls['telefone'].valueChanges.subscribe((value) => {
+      this.phoneMask =
+        value.length === 10 ? '(00) 0000-00009' : '(00) 0 0000-0000';
+    });
+  }
+
+  onInputChange(event: any) {
+    const inputValue = event.target.value;
+    const numericValue = inputValue.replace(/[^0-9]/g, '');
+    this.contactForm.get('telefone')?.patchValue(numericValue, { emitEvent: false });
+  }
 
   public onCancel(): void {
     this.dialogRef.close();
