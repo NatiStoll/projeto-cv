@@ -1,14 +1,21 @@
+img {
+  width: 75%;
+  margin-bottom: 1rem;
+  border-radius: 10%;
+  border-color: black;
+  border-width: 0.5rem;
+  border-style: solid;
+}
 
-  img {
-    width: 75%;
-    margin-bottom: 1rem;
-    border-radius: 10%;
-    border-color: black;
-    border-width: 0.5rem;
-   border-style: solid;
-  }
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
-  h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
+.buttom-style {
+  font-family: inherit;
+  border-radius: 10%;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 0.2rem;
+}
