@@ -18,6 +18,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AddressComponent } from './components/address/address.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     SidewayTitleComponent,
     ContentComponent,
     AboutComponent,
-    FormComponent
+    FormComponent,
+    FooterComponent,
+    ProfileComponent,
+    AddressComponent,
+    ContactComponent
 
   ],
   imports: [

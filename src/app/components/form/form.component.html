@@ -1,3 +1,5 @@
+
+
 <div>
     <h1 mat-dialog-title>Novo usuário</h1>
     <div class="form-content" mat-dialog-content>
@@ -5,7 +7,7 @@
             <fieldset>
                 <legend>Dados pessoais</legend>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12">
                         <mat-form-field appearance="outline">
                             <mat-label>Nome</mat-label>
                             <input matInput formControlName="nome" />
@@ -13,7 +15,7 @@
                             <mat-error>O campo nome é obrigatório.</mat-error>
                         </mat-form-field>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12">
                         <mat-form-field appearance="outline">
                             <mat-label>Telefone</mat-label>
                             <input matInput formControlName="telefone" />
@@ -21,7 +23,7 @@
                             <mat-error>O campo telefone é obrigatório.</mat-error>
                         </mat-form-field>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12">
                         <mat-form-field appearance="outline">
                             <mat-label>E-mail</mat-label>
                             <input matInput formControlName="email" />
@@ -29,17 +31,19 @@
                             <mat-error>O campo email é obrigatório.</mat-error>
                         </mat-form-field>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12">
                         <mat-form-field appearance="outline">
                             <mat-label>Empresa</mat-label>
                             <input matInput formControlName="empresa" />
                             <mat-error>O campo empresa é obrigatório.</mat-error>
                         </mat-form-field>
                     </div>
-                    <div class="col-3">
-                        <mat-form-field appearance="outline">
+                </div>
+                <div class="row">
+                    <div class="mensagem col-12">
+                        <mat-form-field class="" appearance="outline">
                             <mat-label>Mensagem</mat-label>
-                            <input matInput formControlName="mensagem" />
+                            <textarea matInput formControlName="mensagem" ></textarea>
                             <mat-error>O campo mensagem tem limite de 140 caracteres.</mat-error>
                         </mat-form-field>
                     </div>
@@ -52,7 +56,7 @@
         <button mat-flat-button (click)="onCancel()">Cancelar</button>
         <button mat-flat-button (click)="onSubmit()" [disabled]="contactForm.invalid" color="primary" cdkFocusInitial>
             Enviar
-        </button>>
+        </button>
     </div>
 
 </div>
