@@ -1,0 +1,28 @@
+{
+    "skillsList": [
+        {
+            "skill": "Java",
+            "expertise": 100
+        },
+        {
+            "skill": "Spring",
+            "expertise": 100
+        },
+        {
+            "skill": "Angular",
+            "expertise": 75
+        },
+        {
+            "skill": "Bootstrap",
+            "expertise": 50
+        },
+        {
+            "skill": "JavaScript",
+            "expertise": 50
+        },
+        {
+            "skill": "Reactive",
+            "expertise": 25
+        }
+    ]
+}
