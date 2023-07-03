@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillsList } from 'src/app/models/skills-list.model';
-import * as skillsListJson from 'src/assets/skill-list.json';
+import { Skill } from 'src/app/models/skills-list.model';
+import skillsListJson from 'src/assets/data-personal.json';
 
 @Component({
   selector: 'app-skills',
@@ -8,9 +8,9 @@ import * as skillsListJson from 'src/assets/skill-list.json';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  public skillsList!: SkillsList;
+  public skillsList!: Skill[];
 
   ngOnInit(): void {
-    this.skillsList = skillsListJson as SkillsList;
+    this.skillsList = skillsListJson['data-personal'].skillsList as Skill[];
   }
 }
