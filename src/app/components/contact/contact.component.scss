@@ -14,8 +14,15 @@ h4 {
 
 .buttom-style {
   font-family: inherit;
-  border-radius: 10%;
+  border-radius: 10px;
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-width: 0.2rem;
+
+}
+
+.material-symbols-outlined {
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
