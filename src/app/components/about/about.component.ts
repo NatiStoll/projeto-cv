@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { About } from 'src/app/models/about.model';
-import * as aboutJson from 'src/assets/about.json';
+import aboutJson from 'src/assets/data-personal.json';
 
 @Component({
   selector: 'app-about',
@@ -8,9 +8,9 @@ import * as aboutJson from 'src/assets/about.json';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit{
-  public about!: About;
+  public about!: string;
 
   ngOnInit(): void {
-    this.about = aboutJson as About;
+    this.about = aboutJson['data-personal'].about;
   }
 }

@@ -1,0 +1,90 @@
+{
+  "data-personal": {
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "profile": {
+      "imagem": "https://static.wixstatic.com/media/nsplsh_6536313674333556626567~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_925,h_616,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/nsplsh_6536313674333556626567~mv2_d_6000_4000_s_4_2.jpg",
+      "name": "Willians Smiths",
+      "occupation": "design gráfico"
+    },
+    "skillsList": [
+      {
+        "skill": "Java",
+        "expertise": 100
+      },
+      {
+        "skill": "Spring",
+        "expertise": 100
+      },
+      {
+        "skill": "Angular",
+        "expertise": 75
+      },
+      {
+        "skill": "Bootstrap",
+        "expertise": 50
+      },
+      {
+        "skill": "JavaScript",
+        "expertise": 50
+      },
+      {
+        "skill": "Reactive",
+        "expertise": 25
+      }
+    ],
+    "infosDataList": [
+      {
+        "sectionTitle": "Education",
+        "infos": [
+          {
+            "title": "Education 1",
+            "subTitle": "Education 1 2021-2022",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+          },
+          {
+            "title": "Education 2",
+            "subTitle": "Education 2 2022-2023",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+          },
+          {
+            "title": "Education 3",
+            "subTitle": "Education 3 2023-present",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Experience",
+        "infos": [
+          {
+            "title": "Experience 1",
+            "subTitle": "Experience 1 2021-2022",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+          },
+          {
+            "title": "Experience 2",
+            "subTitle": "Experience 2 2022-2023",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+          },
+          {
+            "title": "Experience 3",
+            "subTitle": "Experience 3 2021-present",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dolor arcu, malesuada eget posuere et."
+          }
+        ]
+      }
+    ],
+    "address": {
+      "street": "Rua Deodoro Fonseca",
+      "number": 1399,
+      "district": "Jardim Paraíso",
+      "city": "Solaris",
+      "state": "RJ"
+    },
+    "contact": {
+      "qrCode": "https://qrcg-free-editor.qr-code-generator.com/main/assets/images/websiteQRCode_noFrame.png",
+      "email": "willians@smiths.com",
+      "phoneNumber": 99999999999
+    }
+  }
+}

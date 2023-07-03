@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { InfosDataList } from 'src/app/models/infos-data-list.model';
-import * as infosJson from 'src/assets/info-list.json';
+import { InfosData } from 'src/app/models/infos-data-list.model';
+import infosJson from 'src/assets/data-personal.json';
 
 @Component({
   selector: 'app-info',
@@ -8,9 +8,9 @@ import * as infosJson from 'src/assets/info-list.json';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent {
-  public infosList!: InfosDataList;
+  public infosList!: InfosData[];
 
  ngOnInit(): void {
-    this.infosList = infosJson as InfosDataList;
+    this.infosList = infosJson['data-personal'].infosDataList as InfosData[];
   }
 }

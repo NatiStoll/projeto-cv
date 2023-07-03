@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Contact } from 'src/app/models/contact.model';
-import * as contactJson from 'src/assets/contact.json';
+import contactJson from 'src/assets/data-personal.json';
 import { FormComponent } from '../form/form.component';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.openDialog;
-    this.contact = contactJson as Contact;
+    this.contact = contactJson['data-personal'].contact as Contact;
     this.phoneNumber = this.convertPhoneNumberToString();
   }
   openDialog(): void {
